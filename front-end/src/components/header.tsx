@@ -1,6 +1,7 @@
 // Removed unused React import
 import { Link } from "react-router-dom";
 import "./css/header.css";
+import Menu from "./menu";
 
 const Header = () => {
     return (
@@ -11,13 +12,10 @@ const Header = () => {
                           <Link to="/">AA</Link>
                      </div>
                      <div className="modeContainer">
-                            <Link to="/mode">Mode</Link>
+                            <Link to="/mode">☀️</Link>
                       </div>
                         <div className="menu">
-                            <Link to="/aboutMe">About Me</Link>
-                            <Link to="/projects">Projects</Link>
-                            <Link to="/experience">Experience</Link>
-                            <Link to="/contact">Contact</Link>
+                            <Menu />
                         </div>
                 </div>
               </div>            

@@ -11,8 +11,30 @@
     font-size: 1.5em;
     font-weight: bold;
     display: inline-block;    
-    border: 2px solid var(--tertiary);   
+    border: 2px solid var(--accent1);   
     border-radius: 10px;      
-    padding: 30px;
-    color: var(--tertiary)       
+    padding: 30px;    
+}
+
+.brand a {
+    text-decoration: none;
+    color: var(--accent1);
+}
+
+.modeContainer {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;    
+    padding: 30px;    
+    margin-left: 1400px;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--accent1);
 }
