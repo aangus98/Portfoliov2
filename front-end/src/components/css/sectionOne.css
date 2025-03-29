@@ -1,0 +1,69 @@
+:root{
+    --primary: #121213;
+    --secondary: #799496;
+    --tertiary: #3c1618;
+    --accent1: #DDB967;
+    --accent2: #EDC79B;
+    --white: #fff;
+}
+.sectionOne {
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--accent1);
+}
+
+.AngusTech {
+    font-size: 1.5em;
+    display: flex;
+    font-weight: bold;
+    color: var(--accent1);
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.name {
+    display: inline-block;
+    color: var(--accent1);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 275px;
+}
+
+.title {
+    color: var(--accent1);
+   display: inline-block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 650px;
+}
+
+
+.calligraphy {
+    color: var(--accent1);
+    display: inline-block;
+    font-family: Lucida Handwriting, cursive;
+    margin-left: 275px;
+    font-size: small;
+}
+
+.availability {
+    color: var(--accent1);
+    display: inline-block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 650px;
+}
+
+.description {
+    color: var(--white);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.Time {
+    color: var(--white);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
