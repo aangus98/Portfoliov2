@@ -5,7 +5,7 @@ import { TbFileTypeCss } from "react-icons/tb";
 import { MdHtml } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
-import { SiVite } from "react-icons/si";
+
 
 
 const FrontEnd = () => {
@@ -20,7 +20,6 @@ const FrontEnd = () => {
                 <MdHtml className="icon" size={100} />
                 <FaReact className="icon" size={100} />
                 <FaPython className="icon" size={100} />
-                <SiVite className="icon" size={100} />
             </div>
         </div>
     )
