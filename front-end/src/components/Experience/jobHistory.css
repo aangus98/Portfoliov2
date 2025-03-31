@@ -1,0 +1,128 @@
+/* Define color variables */
+:root {
+    --primary: #121213;
+    --secondary: #799496;
+    --tertiary: #3c1618;
+    --accent1: #DDB967;
+    --accent2: #EDC79B;
+    --white: #fff;
+  }
+  
+.experience-container h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--accent1);
+}
+
+.experience-container p {
+    text-align: center;
+    margin: 10px 0 30px 0;
+    font-size: 1.2em;
+    color: var(--accent2);
+}
+
+  /* Experience page container styling */
+  .experience-page {
+    position: relative;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+  
+  /* Vertical center line */
+  .experience-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: var(--secondary);
+    transform: translateX(-50%);
+  }
+  
+  /* Common styling for each job/timeline item */
+  .experience-page > div {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    margin: 20px 0;
+    background: var(--tertiary);
+    border-radius: 8px;
+  }
+  
+  /* Left-side items (bootcamp, data entry, clerk) */
+  .bootcamp,
+  [class="data-entry"],
+  .clerk {
+    left: 0;
+  }
+  
+  /* Right-side items (middle-school, manager) */
+  .middle-school,
+  .manager {
+    left: 55%;
+  }
+  
+  /* Arrow pointers for left items: arrow on right edge pointing to center */
+  .bootcamp::after,
+  [class="data-entry"]::after,
+  .clerk::after {
+    content: "";
+    position: absolute;
+    top: 20px; /* Adjust vertical position as needed */
+    right: -15px;
+    border: 10px solid transparent;
+    border-left-color: var(--secondary);
+  }
+  
+  /* Arrow pointers for right items: arrow on left edge pointing to center */
+  .middle-school::after,
+  .manager::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    border: 10px solid transparent;
+    border-right-color: var(--secondary);
+  }
+  
+  /* Headings and paragraph styling inside timeline items */
+  .experience-page h2 {
+    margin-top: 0;
+    color: var(--accent1);
+  }
+  
+  .experience-page h3 {
+    margin: 5px 0;
+    color: var(--accent2);
+  }
+  
+  .experience-page p {
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .experience-page::before {
+      left: 20px;
+    }
+    
+    .experience-page > div {
+      width: calc(100% - 40px);
+      left: 40px !important;
+      margin: 20px 0;
+    }
+    
+    /* Hide the arrow pointers on small screens for clarity */
+    .bootcamp::after,
+    [class="data-entry"]::after,
+    .clerk::after,
+    .middle-school::after,
+    .manager::after {
+      display: none;
+    }
+  }
+  
