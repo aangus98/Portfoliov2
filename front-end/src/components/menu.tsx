@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DropDown from "./dropdown";
+import DropDown from "./MainPage/dropdown";
 
 const Menu: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);

@@ -1,10 +1,10 @@
 :root{
-    --primary: #363537;
-    --secondary: #b5ffe1;
-    --tertiary: #A9AFD1;
+    --primary: #121213;
+    --secondary: #799496;
+    --tertiary: #3c1618;
     --accent1: #DDB967;
     --accent2: #EDC79B;
-    font-family: 'Courier New', Courier, monospace;
+    --white: #fff;
 }
 
 .brand {

@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGoodreads } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -14,18 +17,18 @@ const Footer: React.FC = () => {
         }}
       >
         <li>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+          <a href="https://www.linkedin.com/in/andrew-angus-3404551a5/" target="_blank" rel="noopener noreferrer">
+            <CiLinkedin size={24} />
           </a>
         </li>
         <li>
-          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
-            GitHub
+          <a href="https://github.com/aangus98" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={24} />
           </a>
         </li>
         <li>
-          <a href="https://www.goodreads.com/user/show/your-profile" target="_blank" rel="noopener noreferrer">
-            Goodreads
+          <a href="https://www.goodreads.com/user/show/174972405-andrew-angus" target="_blank" rel="noopener noreferrer">
+            <FaGoodreads size={24} />
           </a>
         </li>
       </ul>

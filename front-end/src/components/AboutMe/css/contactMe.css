@@ -1,0 +1,89 @@
+:root {
+    --primary: #121213;
+    --secondary: #799496;
+    --tertiary: #a26769;
+    --accent1: #DDB967;
+    --accent2: #EDC79B;
+    --white: #fff;
+  }
+  
+  .contact-box {
+    background-color: var(--secondary);
+    color: var(--white);
+    max-width: 1520px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .contact-box h2.contactme {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent2);
+    font-weight: bold;
+  }
+  
+  .contact-box input,
+  .contact-box textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--accent2);
+    border-radius: 4px;
+    background-color: var(--tertiary);
+    color: var(--white);
+    font-size: 1rem;
+  }
+  
+  .contact-box input::placeholder,
+  .contact-box textarea::placeholder {
+    color: var(--white);
+  }
+  
+  .contact-box button {
+    background-color: var(--accent1);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    color: var(--primary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 750px;
+  }
+  
+  .contact-box button:hover {
+    background-color: var(--accent2);
+  }
+  
+  /* Notification styles */
+  .notification {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    color: var(--white);
+    z-index: 1000;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .notification.success {
+    background-color: var(--accent1);
+  }
+  
+  .notification.error {
+    background-color: var(--tertiary);
+  }
+  

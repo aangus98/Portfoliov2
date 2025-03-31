@@ -1,6 +1,6 @@
 // Removed unused React import
 import { Link } from "react-router-dom";
-import "./css/header.css";
+import "../css/header.css";
 import Menu from "./menu";
 
 const Header = () => {
