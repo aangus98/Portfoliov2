@@ -32,5 +32,10 @@
     justify-content: center;
     gap: 40px; /* Space between icons */
     margin-top: 20px; /* Space above the icons */
-    margin-left: 90px; /* Space to the left of the icons */
+    margin-left: 100px; /* Space to the left of the icons */
+}
+
+.icon:hover{
+    transform: scale(1.1);
+    color: var(--secondary);
 }

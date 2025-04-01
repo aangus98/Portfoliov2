@@ -9,10 +9,8 @@ interface DropDownProps {
 const DropDown: React.FC<DropDownProps> = ({ options }) => {
   // Map each option to its corresponding route
   const optionLinks: { [key: string]: string } = {
-    "About Me": "/about",
     "Projects": "/projects",
     "Experience": "/experience",
-    "Contact": "/contact",
   };
 
   return (

@@ -10,10 +10,8 @@ interface Option {
 const Menu: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const options: Option[] = [
-    { label: "About Me", path: "/about" },
     { label: "Projects", path: "/projects" },
     { label: "Experience", path: "/experience" },
-    { label: "Contact", path: "/contact" }
   ];
 
   const handleClick = () => {
