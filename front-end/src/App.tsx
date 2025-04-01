@@ -1,18 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from './pages/mainPage';
+import AboutMe from './pages/aboutMe';
+import Projects from './pages/projects';
 import ExperiencePage from './pages/experience';
-// import Projects from './pages/projects';
-// import MainPage from './pages/mainPage';
-// import AboutMe from './pages/aboutMe';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <ExperiencePage />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+      </Routes>
     </Router>
   );
 };
 
 export default App;
+
 
 

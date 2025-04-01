@@ -1,21 +1,14 @@
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGoodreads } from "react-icons/fa";
+import "../css/footer.css"; // Ensure you have a CSS file for styling
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{ textAlign: 'center', padding: '1rem', backgroundColor: '#f1f1f1' }}>
-      <p>&copy; {new Date().getFullYear()} Andrew Angus. All rights reserved.</p>
-      <ul
-        style={{
-          listStyle: 'none',
-          display: 'flex',
-          justifyContent: 'center',
-          gap: '1rem',
-          padding: 0,
-          margin: 0,
-        }}
-      >
+    <footer className="footer">
+      <div className="footer-content">
+      <p className="copywright">&copy; {new Date().getFullYear()} Andrew Angus. All rights reserved.</p>
+      <ul className="social-links">
         <li>
           <a href="https://www.linkedin.com/in/andrew-angus-3404551a5/" target="_blank" rel="noopener noreferrer">
             <CiLinkedin size={24} />
@@ -32,6 +25,7 @@ const Footer: React.FC = () => {
           </a>
         </li>
       </ul>
+      </div>
     </footer>
   );
 };

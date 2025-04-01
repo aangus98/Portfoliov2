@@ -1,12 +1,24 @@
-:root{
-    --primary: #121213;
-    --secondary: #799496;
+:root {
+    /* Dark mode (default) variables */
+    --primary: #000000;
+    --secondary: #223E6D;
     --tertiary: #3c1618;
     --accent1: #DDB967;
     --accent2: #EDC79B;
     --white: #fff;
-}
-
-body {
+  }
+  
+  :root[data-theme="light"] {
+    --primary: #FFFFFF;
+    --secondary: #A3BFC3;
+    --tertiary: #194d12;
+    --accent1: #9B8248;
+    --accent2: #A68B6D;
+    --white: #000;
+  }
+  
+  
+  body {
     background-color: var(--primary);
-}
+  }
+  

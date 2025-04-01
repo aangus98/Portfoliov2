@@ -1,0 +1,33 @@
+:root{
+    --primary: #121213;
+    --secondary: #799496;
+    --tertiary: #3c1618;
+    --accent1: #DDB967;
+    --accent2: #EDC79B;
+    --white: #fff;
+}
+
+.back-end{
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--accent1);
+    background-color: var(--primary); 
+    color: var(--accent1); /* Ensures text is readable against the background */
+}
+
+.back-end h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.backEndIcons{
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between icons */
+    margin-top: 20px; /* Space above the icons */
+}

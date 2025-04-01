@@ -2,17 +2,18 @@ import { VscVscode } from "react-icons/vsc";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoGitlab } from "react-icons/io5";
 import { SiVite } from "react-icons/si";
+import "./css/devTools.css"; // Make sure to create this CSS file for styling
 
 
 const DevTools = () => {
     return (
         <div className="dev-tools">
-            <h2>Dev Tools</h2>
+            <h1>Dev Tools</h1>
             <div className="devToolsIcons">
-                <VscVscode className="icon" size={100} />
-                <FaGithub className="icon" size={100} />
-                <IoLogoGitlab className="icon" size={100} />
-                <SiVite className="icon" size={100} />
+                <VscVscode className="icon" size={100} title="VS Code" />
+                <FaGithub className="icon" size={100} title="Github" />
+                <IoLogoGitlab className="icon" size={100} title="GitLab" />
+                <SiVite className="icon" size={100} title="Vite" />
             </div>
         </div>
     );

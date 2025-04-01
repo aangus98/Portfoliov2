@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "react-router-dom": "^7.4.0"
+  },
+  "scripts": {
+    "start": "cd front-end && npm run dev",
+    "build": "tsc -b && vite build",
+    "lint": "eslint ."
   }
 }

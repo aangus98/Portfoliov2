@@ -1,0 +1,26 @@
+:root{
+    --primary: #121213;
+    --secondary: #799496;
+    --tertiary: #3c1618;
+    --accent1: #DDB967;
+    --accent2: #EDC79B;
+    --white: #fff;
+}
+
+.hamburger-button {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .hamburger-button .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: var(--accent1);
+    transition: 0.4s;
+  }
+  
