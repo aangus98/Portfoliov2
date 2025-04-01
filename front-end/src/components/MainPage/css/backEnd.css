@@ -1,6 +1,6 @@
 :root{
-    --primary: #121213;
-    --secondary: #799496;
+    --primary: #000000;
+    --secondary: #1a344c;
     --tertiary: #3c1618;
     --accent1: #DDB967;
     --accent2: #EDC79B;
@@ -9,10 +9,11 @@
 
 .back-end{
     padding: 50px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: -1180px;
+    margin-left: 500px;
     margin-right: 50px;
     border-radius: 10px;
+    width: 300px;
     border: 2px solid var(--accent1);
     background-color: var(--primary); 
     color: var(--accent1); /* Ensures text is readable against the background */
@@ -27,7 +28,9 @@
 
 .backEndIcons{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 40px; /* Space between icons */
     margin-top: 20px; /* Space above the icons */
+    margin-left: 80px; /* Space to the left of the icons */
 }

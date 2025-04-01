@@ -1,21 +1,25 @@
 :root {
-    --primary: #121213;
-    --secondary: #799496;
-    --tertiary: #a26769;
-    --accent1: #DDB967;
-    --accent2: #EDC79B;
-    --white: #fff;
+  --primary: #000000;
+  --secondary: #1a344c;
+  --tertiary: #3c1618;
+  --accent1: #DDB967;
+  --accent2: #EDC79B;
+  --white: #fff;
   }
   
   .contact-box {
-    background-color: var(--secondary);
+    background-color: var(--primary);
+  
     color: var(--white);
-    max-width: 1520px;
+    width: 20%;
     margin: 2rem auto;
     padding: 2rem;
+    border: solid 3px var(--accent1);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    position: relative;
+    margin-right: 35px;
+    margin-top: -700px;
+    margin-bottom: 1000px;
   }
   
   .contact-box h2.contactme {
@@ -40,7 +44,7 @@
     padding: 0.75rem;
     border: 2px solid var(--accent2);
     border-radius: 4px;
-    background-color: var(--tertiary);
+    background-color: var(--primary);
     color: var(--white);
     font-size: 1rem;
   }
@@ -59,7 +63,7 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 750px;
+    margin-left: 150px;
   }
   
   .contact-box button:hover {

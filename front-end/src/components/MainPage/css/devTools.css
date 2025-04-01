@@ -9,11 +9,11 @@
 
 .dev-tools{
     padding: 50px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: -1020px;
+    margin-left: 950px;
     margin-right: 50px;
-    margin-bottom: 50px; /* Added to ensure spacing at the bottom */
     border-radius: 10px;
+    width: 300px;
     border: 2px solid var(--accent1);
     background-color: var(--primary); 
     color: var(--accent1); /* Ensures text is readable against the background */
@@ -28,7 +28,9 @@
 
 .devToolsIcons{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 40px; /* Space between icons */
     margin-top: 20px; /* Space above the icons */
+    margin-left: 90px; /* Space to the left of the icons */
 }

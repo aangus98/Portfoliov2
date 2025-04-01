@@ -4,7 +4,7 @@ import SectionOne from "../components/MainPage/sectionOne";
 import FrontEnd from "../components/MainPage/frontEnd";
 import BackEnd from "../components/MainPage/backEnd";
 import DevTools from "../components/MainPage/devTools";
-import ContactBox from "../components/AboutMe/contactMe";
+import ContactBox from "../components/MainPage/contactMe";
 
 const MainPage = () => {
   return (

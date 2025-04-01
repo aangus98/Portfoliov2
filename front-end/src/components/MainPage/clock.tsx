@@ -24,7 +24,7 @@ const CentralTime: React.FC = () => {
 
   return (
     <div>
-      <h3>{centralTime}</h3>
+      <h3>{centralTime} CT</h3>
     </div>
   );
 };
