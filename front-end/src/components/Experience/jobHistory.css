@@ -1,16 +1,17 @@
 /* Define color variables */
 :root {
-    --primary: #121213;
-    --secondary: #799496;
-    --tertiary: #3c1618;
-    --accent1: #DDB967;
-    --accent2: #EDC79B;
-    --white: #fff;
+  -primary: #000000;
+  --secondary: #1a344c;
+  --tertiary: #3c1618;
+  --accent1: #DDB967;
+  --accent2: #EDC79B;
+  --white: #fff;
   }
   
 .experience-container h1 {
     text-align: center;
     margin: 20px 0;
+    margin-top: 120px;
     color: var(--accent1);
 }
 

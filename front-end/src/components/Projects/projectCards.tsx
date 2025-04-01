@@ -1,4 +1,5 @@
 import React from 'react';
+import "./projectCards.css";
 
 interface Project {
   id: number;
@@ -17,24 +18,8 @@ const projects: Project[] = [
 ];
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
-  <a href={project.url} style={{ textDecoration: 'none', color: 'inherit' }}>
-    <div
-      style={{
-        border: '1px solid #DDB967',
-        borderRadius: '10px',
-        padding: '20px',
-        boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-        backgroundColor: '#799496',
-        transition: 'transform 0.2s',
-        cursor: 'pointer',
-        width: 300,
-        height: 300,
-        margin: '50px',
-        marginLeft: '250px',
-      }}
-      onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.03)')}
-      onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
-    >
+  <a href={project.url} className="project-link">
+    <div className="project-card">
       <h3>{project.title}</h3>
       <p>{project.description}</p>
     </div>
@@ -43,23 +28,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
 
 const ProjectsPreview: React.FC = () => (
   <div>
-    <h1
-    style={
-        {
-            textAlign: 'center',
-            marginTop: '20px',
-            fontSize: '2.5rem',
-            fontWeight: 'bold',
-            color: '#DDB967',
-        }
-    }>Projects</h1>
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gap: '20px',
-      }}
-    >
+    <h1 className="projects-title">Projects</h1>
+    <div className="projects-grid">
       {projects.map(project => (
         <ProjectCard key={project.id} project={project} />
       ))}
