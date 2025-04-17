@@ -57,12 +57,16 @@
 
 @media screen and (max-width: 768px) {
     .dev-tools {
-        width: 100%; /* Full width on smaller screens */
+        width: 500px; /* Full width on smaller screens */
         margin: 20px; /* Adjust margins for smaller screens */
+        margin-left: -5px; /* Adjust margin for smaller screens */
     }
     .devToolsIcons {
         flex-direction: row; /* Change to row layout on smaller screens */
         justify-content: center; /* Center the icons horizontally */
+        size: 50px; /* Adjust icon size for smaller screens */
+        gap: 20px; /* Adjust spacing between icons for smaller screens */
+        margin-right: 100px; /* Adjust margin for smaller screens */
     }
     .icon {
         margin: 0 10px; /* Adjust spacing between icons */

@@ -137,7 +137,7 @@
 
 @media screen and (max-width: 768px) {
     .sectionOne {
-        width: 100%; /* Full width on smaller screens */
+        width: 1000px; /* Full width on smaller screens */
         margin: 20px; /* Adjust margins for smaller screens */
     }
     .headshot img {
@@ -148,6 +148,14 @@
         margin-left: 0; /* Center the availability box on smaller screens */
     }
     .title, .description, .time {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+
+    .availability {
+        max-width: 500px; /* Full width on smaller screens */
+    }
+
+    .sectionOne h1{
         font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
   
