@@ -4,8 +4,8 @@
     "react-router-dom": "^7.4.0"
   },
   "scripts": {
-    "start": "cd front-end && npm install && npm run dev",
-    "build": "cd back-end && npm install && npm run start",
+    "start": "cd front-end && npm run dev",
+    "build": "cd front-end && npm install",
     "lint": "eslint ."
   }
 }
