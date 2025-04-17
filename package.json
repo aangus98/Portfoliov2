@@ -3,8 +3,8 @@
     "react-router-dom": "^7.4.0"
   },
   "scripts": {
-    "start": "cd front-end && npm run dev",
-    "build": "tsc -b && vite build",
+    "start": "npm run dev",
+    "build": "cd frontend",
     "lint": "eslint ."
   }
 }
