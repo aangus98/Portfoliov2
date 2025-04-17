@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/header.css";
-import Menu from "./menu";
 
 const Header = () => {
   // Default is dark mode since your :root variables are for dark mode.
@@ -26,8 +25,8 @@ const Header = () => {
           <div className="brand">
             <Link to="/">AA</Link>
           </div>
-          <div className="menu">
-            <Menu />
+          <div className="experience">
+            <Link to="/experience">Experience</Link>
           </div>
           <div className="modeContainer">
             <label className="switch">

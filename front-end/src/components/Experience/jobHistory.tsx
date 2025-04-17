@@ -1,4 +1,4 @@
-import './jobHistory.css'; // Make sure to create a CSS file for styling
+import './jobHistory.css';
 
 const Experience = () => {
     return (

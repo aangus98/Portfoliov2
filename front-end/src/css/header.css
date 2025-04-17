@@ -11,7 +11,8 @@
   position: fixed;
   margin-top: -120px;
   background-color: var(--tertiary);
-  width: 100%;
+  width: 2500px;
+  margin-left: -10px;
 }
 
 
@@ -38,9 +39,15 @@
     margin-left: 50px;
 }
 
-.menu {
+.experience {
+    font-size: 1.5em;
     display: inline-block;
-    margin-left: 750px;
+    margin-left: 1450px;
+}
+
+.experience a {
+    text-decoration: none;
+    color: var(--accent1);
 }
 
 .menu a {
@@ -102,3 +109,72 @@
     border-radius: 50%;
   }
   
+@media screen and (max-width: 1200px) {
+    .brand {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    
+    .modeContainer {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    
+    .experience {
+        font-size: 1.2em;
+        margin-left: 800px;
+    }
+    
+    .menu a {
+        font-size: 1.2em;
+    }
+    
+    .switch {
+        width: 50px;
+        height: 28px;
+    }
+    
+    .slider:before {
+        height: 22px;
+        width: 22px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+  
+}
+
+  @media screen and (max-width: 768px) {
+    .brand {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    
+    .modeContainer {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    
+    .experience {
+        font-size: 1.2em;
+        margin-left: 250px;
+    }
+    
+    .menu a {
+        font-size: 1.2em;
+    }
+    
+    .switch {
+        width: 50px;
+        height: 28px;
+    }
+    
+    .slider:before {
+        height: 22px;
+        width: 22px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    
+  }

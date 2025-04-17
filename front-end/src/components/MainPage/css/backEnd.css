@@ -39,3 +39,36 @@
     transform: scale(1.1);
     color: var(--secondary);
 }
+
+@media screen and (max-width: 1200px) {
+    .back-end {
+        width: 100%; /* Full width on smaller screens */
+        margin: 20px; /* Adjust margins for smaller screens */
+    }
+    .backEndIcons {
+        flex-direction: row; /* Change to row layout on smaller screens */
+        justify-content: center; /* Center the icons horizontally */
+    }
+    .icon {
+        margin: 0 10px; /* Adjust spacing between icons */
+    }
+    .back-end h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .back-end {
+        width: 100%; /* Full width on smaller screens */
+        margin: 20px; /* Adjust margins for smaller screens */
+    }
+    .backEndIcons {
+        flex-direction: row; /* Change to row layout on smaller screens */
+        justify-content: center; /* Center the icons horizontally */
+    }
+    .icon {
+        margin: 0 10px; /* Adjust spacing between icons */
+    }
+    
+}
