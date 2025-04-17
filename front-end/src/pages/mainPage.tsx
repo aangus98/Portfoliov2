@@ -6,7 +6,7 @@ import BackEnd from "../components/MainPage/backEnd";
 import DevTools from "../components/MainPage/devTools";
 import ContactBox from "../components/MainPage/contactMe";
 import ProjectsPreview from "../components/Projects/projectCards";
-import React, { useEffect} from "react";
+import { useEffect} from "react";
 
 const MainPage = () => {
   useEffect(() => {
