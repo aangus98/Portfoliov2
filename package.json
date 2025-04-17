@@ -4,7 +4,7 @@
   },
   "scripts": {
     "start": "cd front-end && npm run dev",
-    "build": "cd front-end",
+    "build": "npm install && cd front-end && npm install",
     "lint": "eslint ."
   }
 }
