@@ -4,7 +4,7 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "build": "cd frontend",
+    "build": "cd front-end",
     "lint": "eslint ."
   }
 }
