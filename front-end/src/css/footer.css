@@ -44,3 +44,19 @@
     color: var(--white); /* Change this color to your preferred hover color */
   }
   
+
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      padding: 0 10px;
+      margin-left: 150px;
+    }
+  
+    .social-links {
+      flex-direction: row;
+      gap: 25px;
+    }
+    .social-links li a {
+      font-size: 1.2rem;
+    }
+    
+  }

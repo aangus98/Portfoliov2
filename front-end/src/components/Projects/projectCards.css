@@ -94,6 +94,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+.carousel-wrapper {
+    margin-left: 65px;
+  }
+
   .carousel-button {
     font-size: 2rem;
     padding: 10px;
