@@ -25,9 +25,6 @@ const Header = () => {
           <div className="brand">
             <Link to="/">AA</Link>
           </div>
-          <div className="experience">
-            <Link to="/experience">Experience</Link>
-          </div>
           <div className="modeContainer">
             <label className="switch">
               <input type="checkbox" checked={!darkMode} onChange={toggleMode} />

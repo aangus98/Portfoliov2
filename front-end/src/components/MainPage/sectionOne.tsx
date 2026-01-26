@@ -1,6 +1,6 @@
 import "./css/sectionOne.css";
-import Headshot from "../../assets/headshot.jpg";
 import CentralTime from "./clock";
+import AvailabilityDot from "./projectAvailability";
 
 const SectionOne: React.FC = () => {
 
@@ -8,9 +8,6 @@ const SectionOne: React.FC = () => {
 
     return (
         <div className="imageContainer">
-            <div className="headshot">
-                <img src={Headshot} alt="headshot" />
-            </div>
         <div className="sectionOne">
             <div className="name">
                 <h1>Andrew Angus</h1>
@@ -18,12 +15,8 @@ const SectionOne: React.FC = () => {
             <div className="title">
                 <h2>Full Stack Developer</h2>
             </div>
-            <div className={`availability ${isAvailable ? "available" : "not-available"}`}>
-                <h2>
-                 {isAvailable
-                 ? "Andrew is available for projects"
-                  : "Andrew is not available for projects"}
-                </h2>
+            <div className="availability"> 
+                <AvailabilityDot available={isAvailable} />
             </div>
             <div className="description">
                 <p>Based in Austin, Texas who is detail-orientated and able to construct fullstack applications from scratch to production. 

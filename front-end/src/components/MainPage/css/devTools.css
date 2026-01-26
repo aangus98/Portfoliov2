@@ -1,11 +1,3 @@
-:root{
-    --primary: #121213;
-    --secondary: #799496;
-    --tertiary: #3c1618;
-    --accent1: #DDB967;
-    --accent2: #EDC79B;
-    --white: #fff;
-}
 
 .dev-tools{
     padding: 50px;
@@ -38,37 +30,4 @@
 .icon:hover{
     transform: scale(1.1);
     color: var(--secondary);
-}
-
-@media screen and (max-width: 1200px) {
-    .dev-tools {
-        width: 100%; /* Full width on smaller screens */
-        margin: 20px; /* Adjust margins for smaller screens */
-    }
-    .devToolsIcons {
-        flex-direction: row; /* Change to row layout on smaller screens */
-        justify-content: center; /* Center the icons horizontally */
-    }
-    .icon {
-        margin: 0 10px; /* Adjust spacing between icons */
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .dev-tools {
-        width: 500px; /* Full width on smaller screens */
-        margin: 20px; /* Adjust margins for smaller screens */
-        margin-left: -5px; /* Adjust margin for smaller screens */
-    }
-    .devToolsIcons {
-        flex-direction: row; /* Change to row layout on smaller screens */
-        justify-content: center; /* Center the icons horizontally */
-        size: 50px; /* Adjust icon size for smaller screens */
-        gap: 20px; /* Adjust spacing between icons for smaller screens */
-        margin-right: 100px; /* Adjust margin for smaller screens */
-    }
-    .icon {
-        margin: 0 10px; /* Adjust spacing between icons */
-    }
 }

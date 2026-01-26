@@ -1,6 +1,5 @@
 import React from 'react';
-import "./projectCards.css";
-import { useState } from 'react';
+import './projectCards.css';
 
 interface Project {
   id: number;
@@ -27,40 +26,19 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
   </a>
 );
 
-const ProjectsPreview: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentIndex((prev: number) => (prev === 0 ? projects.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev: number) => (prev === projects.length - 1 ? 0 : prev + 1));
-  };
-
-  return (
-    <>
-      <div className="carousel-wrapper">
-        <h1 className="projects-title">Projects</h1>
-        <div className="carousel-container">
-          <button onClick={handlePrev} className="carousel-button">‹</button>
-          <div className="carousel-slide">
-            <div
-              className="carousel-inner"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
+const ProjectsPreview: React.FC = () => (
+  <div className="projects-wrapper">
+    <h1 className="projects-title">Projects</h1>
+    <div className="projects-grid">
+      {projects.map((project) => (
+        <a key={project.id} href={project.url} className="project-link">
+          <div className="project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
           </div>
-          <button onClick={handleNext} className="carousel-button">›</button>
-        </div>
-      </div>
-    </>
-  );
-};
-
-
-
+        </a>
+      ))}
+    </div>
+  </div>
+);
 export default ProjectsPreview;

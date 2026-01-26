@@ -1,12 +1,4 @@
-:root {
-  --primary: #000000;
-  --secondary: #1a344c;
-  --tertiary: #3c1618;
-  --accent1: #DDB967;
-  --accent2: #EDC79B;
-  --white: #fff;
-  }
-  
+
   .contact-box {
     background-color: var(--primary);
   
@@ -90,48 +82,3 @@
   .notification.error {
     background-color: var(--tertiary);
   }
-
-  @media screen and (max-width: 1200px) {
-    .contact-box {
-      width: 50%;
-      margin: 1rem auto;
-      padding: 1.5rem;
-    }
-    .contact-box button {
-      width: 100%;
-      margin-left: 0;
-    }
-    .notification {
-      top: 0.5rem;
-      right: 0.5rem;
-      font-size: 0.9rem;
-    }
-    .notification.success,
-    .notification.error {
-      font-size: 0.9rem;
-    }
-    .contact-box h2.contactme {
-      font-size: 1.5rem;
-    }
-    
-  }
-  
-@media screen and (max-width: 768px) {
-    .contact-box {
-      width: 90%;
-      margin-left: 65px;
-      padding: 1.5rem;
-    }
-    .contact-box button {
-      width: 100%;
-      margin-left: 0;
-    }
-    .notification {
-      top: 0.5rem;
-      right: 0.5rem;
-      font-size: 0.9rem;
-    }
-  .notification.success {
-    font-size: 0.9rem;
-  }
-}
