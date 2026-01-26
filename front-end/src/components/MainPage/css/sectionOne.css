@@ -1,50 +1,164 @@
+/* css/layout.css */
 
-.imageContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    margin-top: 120px;
-    margin-left: 50px;
+/* Full-page two-column layout */
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 360px 1fr;
 }
 
-.sectionOne{
-    display: flex;
+/* LEFT */
+.sidebar {
+  position: sticky;          /* key */
+  top: 0;
+  height: 100vh;             /* key */
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--background);
+  backdrop-filter: blur(8px);
+}
+
+.sidebarInner {
+  height: 100%;
+  padding: 40px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* Identity */
+.identity .name {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  color: var(--accent1);
+}
+
+.identity .title {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  color: var(--accent1);
+}
+
+/* Status block (availability + clock) */
+.statusBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent1);
+}
+/* Bookmarks */
+.bookmarks {
+  margin-top: 6px;
+}
+
+.bookmarkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bookmarkBtn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent1);
+  opacity: 0.85;
+}
+
+.bookmarkBtn:hover {
+  color: var(--accent2);
+  opacity: 1;
+}
+
+/* Socials */
+.socials {
+  margin-top: auto; /* pushes socials to bottom */
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  font-size: 13px;
+  color: var(--accent1);
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  color: var(--accent2);
+}
+
+/* RIGHT */
+.content {
+  height: 100vh;      /* key */
+  overflow-y: auto;   /* key */
+  padding: 48px 56px;
+  scroll-behavior: smooth;
+}
+
+.contentSection {
+  padding: 28px 0;
+  max-width: 72ch;
+}
+
+.sectionTitle {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  color: var(--accent1);
+}
+
+.sectionText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--accent1);
+}
+
+/* Make anchor jumps land nicely below the top edge */
+.contentSection {
+  scroll-margin-top: 28px;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--tertiary);
+  }
+
+  .content {
+    height: auto;
+    overflow: visible;
+    padding: 28px 20px;
+  }
+
+  .sidebarInner {
+    padding: 24px 20px;
+  }
+
+  .bookmarkList {
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right;
-    width: 95%;
-    border-radius: 10px;
-    margin: 20px;
-    margin-left: 50px;
-    
-}
-
-.sectionOne h1{
-    color: var(--accent1);
-    font-size: 4.5rem;
-    margin: 20px 0;
-    text-align: center;
-    justify-content: center;
-}
-.title{
-    color: var(--accent1);
-    margin: 10px 0;
-    margin-top: -20px;
-    text-align: center;
-}
-
-.description{
-    color: var(--tertiary);
-    margin: 10px 0;
-    margin-top: -20px;
-    text-align: center;
-}
-
-.time{
-    color: var(--accent1);
-    margin: 10px 0;
-    margin-top: -20px;
-    text-align: center;
+    gap: 14px;
+  }
 }

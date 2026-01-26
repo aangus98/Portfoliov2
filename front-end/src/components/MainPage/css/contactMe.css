@@ -1,17 +1,15 @@
 
   .contact-box {
-    background-color: var(--primary);
-  
-    color: var(--white);
-    width: 20%;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 3px var(--accent1);
+    background-color: var(--secondary);
+    color: var(--accent1);
+    width: 100%;
+    margin: auto;
+    padding: 75px;
+    border: solid 3px var(--accent2);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-right: 35px;
-    margin-top: -700px;
-    margin-bottom: 1000px;
+    margin-left: 275px;
+   
   }
   
   .contact-box h2.contactme {

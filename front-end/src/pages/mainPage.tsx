@@ -1,7 +1,4 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import SectionOne from "../components/MainPage/sectionOne";
-import ProjectsPreview from "../components/Projects/projectCards";
+import Layout from "../components/MainPage/sectionOne";
 import { useEffect} from "react";
 
 const MainPage = () => {
@@ -10,10 +7,7 @@ const MainPage = () => {
   }, []);
   return (
     <>
-      <Header />
-      <SectionOne />
-      <ProjectsPreview />
-      <Footer />
+      <Layout />
     </>
   );
 }
