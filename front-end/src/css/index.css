@@ -1,24 +1,14 @@
 :root {
-    /* Dark mode (default) variables */
-    --primary: #0F172A;
-    --secondary: #2A2E35;
-    --tertiary: #F9FAFB;
-    --accent1: #9CA3AF;
-    --accent2: #2563EB;
-    --background: #000;
+  --primary: #030612;     
+  --secondary: #3c4454;   
+  --tertiary: #060D25;    
+  --accent1: #60a5fa;
+  --accent2: #a78bfa;    
+  --background: #000;
+  --text: #fff;
   }
-  
-  :root[data-theme="light"] {
-    --primary: #FFFFFF;
-    --secondary: #A3BFC3;
-    --tertiary: #194d12;
-    --accent1: #9B8248;
-    --accent2: #A68B6D;
-    --background: #f0f0f0;
-  }
-  
-  
+    
   body {
-    background-color: var(--background);
+    background: linear-gradient( 180deg, var(--primary), var(--secondary));
   }
   

@@ -7,6 +7,7 @@ import { techIcons } from "./tools";
 import ContactBox from "./contactMe";
 import "./css/sectionOne.css";
 import Footer from "../footer";
+import Age from "./aboutMe";
 
 type NavItem = {
   id: string;
@@ -15,11 +16,11 @@ type NavItem = {
 
 const NAV_ITEMS: NavItem[] = [
   { id: "about", label: "About" },
-  { id: "tools", label: "Tools" },
-  { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
-  { id: "contactMe", label: "Contact Me" },
   { id: "blog", label: "Blog" },
+  { id: "experience", label: "Experience" },
+  { id: "contactMe", label: "Contact Me" },
+  { id: "tools", label: "Tools" },
 ];
 
 const scrollToId = (id: string) => {
@@ -79,9 +80,9 @@ export default function Layout(): JSX.Element {
       {/* RIGHT (scrollable) */}
       <main className="content" aria-label="Main content">
         <section id="about" className="contentSection">
-          <h3 className="sectionTitle">About</h3>
+          <h2 className="sectionTitle">About</h2>
           <p className="sectionText">
-              Placeholder text about Andrew Angus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <Age /> 
           </p>
         </section>
 
@@ -96,24 +97,21 @@ export default function Layout(): JSX.Element {
             Add posts or links here.
           </p>
         </section>
-
-        <section id="contactMe" className="contentSection">
-          <h3 className="sectionTitle">Contact Me</h3>
-          <p className="sectionText">
-            <ContactBox />
-          </p>
-        </section>
-
         <section id="experience" className="contentSection">
           <h3 className="sectionTitle">Experience</h3>
           <p className="sectionText">
             Add roles and impact bullets here.
           </p>
         </section>
+
+        <section id="contactMe" className="contentSection">
+          <h3 className="sectionTitle">Contact Me</h3>
+            <ContactBox />
+        </section>
         
         <section id="tools" className="contentSection">
           <h3 className="sectionTitle">Tools</h3>
-          <IconCarousel icons={Object.values(techIcons).flat()} visibleCount={4} autoScroll={true} interval={3000} />
+          <IconCarousel icons={Object.values(techIcons).flat()} />
         </section>
       </main>
     </div>

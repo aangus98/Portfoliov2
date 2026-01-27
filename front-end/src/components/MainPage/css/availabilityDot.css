@@ -42,7 +42,7 @@
 /* Text */
 .availabilityLabel {
   font-size: 0.85rem;
-  color: var(--accent1);
+  color: var(--text);
   white-space: nowrap;
 }
 

@@ -5,6 +5,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 360px 1fr;
+  background-color: var(--primary);
 }
 
 /* LEFT */
@@ -12,9 +13,9 @@
   position: sticky;          /* key */
   top: 0;
   height: 100vh;             /* key */
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  background: var(--background);
+  background: linear-gradient(180deg, var(--secondary), var(--tertiary)); /* semi-transparent */
   backdrop-filter: blur(8px);
+  box-shadow: 12px 0 34px var(--tertiary);
 }
 
 .sidebarInner {
@@ -30,13 +31,13 @@
   margin: 0;
   font-size: 40px;
   letter-spacing: 0.5px;
-  color: var(--accent1);
+  color: var(--text);
 }
 
 .identity .title {
   margin: 10px 0 0 0;
   font-size: 16px;
-  color: var(--accent1);
+  color: var(--text);
 }
 
 /* Status block (availability + clock) */
@@ -50,7 +51,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--accent1);
+  color: var(--text);
 }
 /* Bookmarks */
 .bookmarks {
@@ -75,7 +76,7 @@
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--accent1);
+  color: var(--text);
   opacity: 0.85;
 }
 
@@ -84,22 +85,10 @@
   opacity: 1;
 }
 
-/* Socials */
-.socials {
-  margin-top: auto; /* pushes socials to bottom */
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
+.footer {
+  margin-top: 375px;
+  font-size: 12px;
 
-.socialLink {
-  font-size: 13px;
-  color: var(--accent1);
-  text-decoration: none;
-}
-
-.socialLink:hover {
-  color: var(--accent2);
 }
 
 /* RIGHT */
@@ -108,6 +97,7 @@
   overflow-y: auto;   /* key */
   padding: 48px 56px;
   scroll-behavior: smooth;
+  background: linear-gradient(180deg, var(--secondary), var(--tertiary), var(--primary));
 }
 
 .contentSection {
@@ -118,19 +108,23 @@
 .sectionTitle {
   margin: 0 0 12px 0;
   font-size: 22px;
-  color: var(--accent1);
+  color: var(--text);
 }
 
 .sectionText {
-  margin: 0;
+  width: 1000px;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--accent1);
+  color: var(--text);
 }
 
 /* Make anchor jumps land nicely below the top edge */
 .contentSection {
   scroll-margin-top: 28px;
+}
+
+.highlight {
+  color: var(--accent2);
 }
 
 /* Responsive: stack on mobile */

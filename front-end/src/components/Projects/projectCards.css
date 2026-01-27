@@ -23,7 +23,7 @@
   z-index: 3;
   position: relative;
   color: var(--accent1);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+  text-shadow: 2px 2px 4px var(--accent2);  
 }
 
 .project-link {
@@ -36,28 +36,27 @@
 }
 
 .project-card {
-  background-color: var(--primary);
-  border: 2px solid var(--accent2);
+  background-color: var(--secondary);
   flex-direction: row;
   border-radius: 10px;
   padding: 50px;
   min-height: 200px;
   min-width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--tertiary);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px var(--tertiary);
 }
 .project-card h3{
   margin-top: 0; 
-  color: var(--accent1);
+  color: var(--text);
 }
 
 .project-card p {
-  color: var(--accent2);
+  color: var(--text);
 }
 
 
