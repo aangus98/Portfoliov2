@@ -2,9 +2,6 @@
   width: 1250px;
   overflow: hidden;
 }
-.icon-carousel {
-  overflow: hidden;
-}
 
 .icon-track {
   width: 200%;
@@ -41,4 +38,11 @@
 .icon-slot svg:hover {
   transform: scale(1.1);
   color: var(--accent2);
+}
+
+@media (max-width: 768px) {
+  .icon-carousel {
+    width: 768px;
+  }
+
 }

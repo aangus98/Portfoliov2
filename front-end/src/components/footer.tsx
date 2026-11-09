@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-      <p className="copywright">&copy; {new Date().getFullYear()} Andrew Angus. All rights reserved.</p>
+      <p className="copyright">&copy; {new Date().getFullYear()} Andrew Angus. All rights reserved.</p>
       <ul className="social-links">
         <li>
           <a href="https://www.linkedin.com/in/andrew-angus-3404551a5/" target="_blank" rel="noopener noreferrer">
